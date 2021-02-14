@@ -96,7 +96,7 @@ class BidirectionalLinksGenerator < Jekyll::Generator
   end
 
   def note_id_from_note(note)
-    note.data['title']
+    note.path
       .dup
       .gsub(/\W+/, ' ')
       .delete(' ')
